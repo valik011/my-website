@@ -1,0 +1,330 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e6f7ff; /* Light light blue color */
+    color: #1e1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Header */
+header {
+    background-color: #e6f7ff; /* Light light blue color */
+    padding: 1rem 0;
+}
+
+.header-logo {
+    width: 50px; /* Set the width of the logo */
+    height: auto; /* Maintain the aspect ratio */
+    margin-left: 40px;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Playfair Display', serif;
+    color: rgb(22, 19, 19); /* Change link color to black */
+    font-size: 1.6rem; /* Increase font size */
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.05);
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+/* Header Social Icons */
+.social-icons-header a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #559ce9; /* Header icon color */
+    transition: color 0.3s ease;
+}
+
+.social-icons-header a:hover {
+    color: #3086e1; /* Header icon hover color */
+}
+
+.hire-me-button {
+    font-family: 'Playfair Display', serif;
+    background-color: #007bff; /* Blue color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+.hire-me-button:hover {
+    transform: scale(1.05);
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 992px) {
+    .hire-me-button {
+        padding: 8px 16px; /* Smaller padding */
+        font-size: 1rem;   /* Smaller font size */
+    }
+}
+
+/* Main Content */
+
+.main-image-container, .skills-container, .experience-container, .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem; /* Add space below containers */
+}
+
+.intro-text {
+    font-family: 'Playfair Display', serif;
+    max-width: 600px; /* Adjust max-width as needed */
+}
+
+.intro-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.main-image {
+    max-width: 100%; /* Ensure the image is responsive */
+    width: auto;
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Ensure it's a block-level element */
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+#about, #skills, #experience, #education, #portfolio, #contact {
+    margin-top: 3rem;
+    padding: 3rem;
+    background-color: #f9f9f9; /* Optional: Add a background color */
+    border-radius: 5px;
+}
+
+#about h1, #skills h1, #experience h1, #education h1, #portfolio h1, #contact h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center; /* Center the section headers */
+    font-size: 2.5rem; /* Increase font size of the headers */
+    margin-bottom: 2rem;
+}
+
+#about p, #skills p, #experience p, #education p, #portfolio p, #contact p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Image Styles */
+.skills-image, .experience-image, .contact-image, .portfolio-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem; /* Space below images */
+}
+
+/* List Styles */
+.skills-list {
+    font-family: 'Playfair Display', serif;
+    list-style-type: disc;
+    padding: 0;
+    margin-top: 1rem;
+    display: grid; /* Use CSS Grid for the layout */
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 1rem; /* Space between items */
+}
+
+.skills-list li {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Extended Sections */
+.extended-skill, .extended-experience, .extended-portfolio {
+    margin-top: 2rem;
+    width: 100%;
+    background-color: #fff; /* Optional: Add background color */
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for effect */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.extended-skill h3, .extended-experience h3, .extended-portfolio h3, .contact-message h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.extended-skill p, .extended-experience p, .extended-portfolio p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Education */
+.education-item {
+    margin-bottom: 2rem;
+}
+
+.education-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-item p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Contact */
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+.contact-info p, .contact-message p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.contact-message {
+    margin-top: 3rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .name-input {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-form .name-input input {
+    flex: 1;
+}
+
+.contact-form textarea {
+    height: 150px; /* Increase the height of the textarea */
+}
+
+.contact-form button {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content; /* Make the button width fit its content */
+    align-self: center; /* Center the button */
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Go to Top Link */
+.go-to-top {
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    margin-top: 1rem;
+    color: #007bff; /* Link color */
+    font-size: 1.2rem; /* Font size */
+    text-decoration: none; /* Remove underline */
+}
+
+.go-to-top:hover {
+    color: #0056b3; /* Hover color */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer */
+footer {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding: 1rem;
+    background-color: lightskyblue;
+    color: white; /* Ensure the text is readable on the background image */
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icons-footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.social-icons-footer a {
+    color: white; /* Matches the text color of the footer */
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons-footer a:hover {
+    color: #d3d3d3; /* A lighter shade of white for hover effect */
+}
+
+/* Positioning social icons above the hamburger button on mobile */
+
+@media (min-width: 992px) {
+    .social-icons-header {
+        display: flex !important; /* Ensure icons are visible on larger screens */
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar .social-icons-header {
+        display: none;
+    }
+
+    .d-lg-none .social-icons-header {
+        display: flex;
+    }
+}

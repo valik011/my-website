@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to My Website. I create responsive, user-friendly websites and apps that deliver results. Explore my skills to enhance your digital presence today.">
+    <meta name="keywords" content="Val Budimir, Web Developer, Software Developer, Portfolio, Skills, Experience, Contact">
+    <meta name="author" content="Val Budimir">
+    <meta property="og:title" content="Contact Val Budimir" />
+    <meta property="og:description" content="Get in touch with Val Budimir for web development services." />
+    <meta property="og:image" content="https://developer.softlaunchpad.com/img/contact-image.avif" />
+    <meta property="og:url" content="https://developer.softlaunchpad.com/contact.html" />
+    <meta property="og:type" content="website" />
+
+    <title>Contact - Val Budimir</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://www.developer.softlaunchpad.com/contact.html" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fade-in">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.avif" alt="Logo" class="header-logo" width="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex align-items-center order-lg-2 fade-in">
+                <div class="social-icons-header d-none d-lg-flex fade-in">
+                    <a href="https://www.facebook.com/valentin.budimir.5/" class="fade-in"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/valentin-budimir-a868952b3/" class="fade-in"><i class="bi bi-linkedin"></i></a>
+                    <a href="documents/Valentin_Budimir_Resume.pdf" class="fade-in" download><i class="bi bi-file-earmark-arrow-down"></i> Resume</a>
+                </div>
+                <a href="contact.html" class="btn btn-primary hire-me-button ml-3">Hire Me!</a>
+            </div>
+            <div class="collapse navbar-collapse justify-content-center order-lg-1" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="d-flex d-lg-none justify-content-center py-2">
+            <div class="social-icons-header fade-in">
+                <a href="https://www.facebook.com/valentin.budimir.5/" class="fade-in"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/valentin-budimir-a868952b3/" class="fade-in"><i class="bi bi-linkedin"></i></a>
+                <a href="documents/Valentin_Budimir_Resume.pdf" class="fade-in" download><i class="bi bi-file-earmark-arrow-down"></i> Resume</a>
+            </div>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <section id="contact" class="fade-in">
+            <h1 class="text-center fade-in">Contact</h1>
+            <div class="row fade-in">
+                <div class="col-md-6 fade-in">
+                    <img src="img/contact-image.avif" alt="Contact Image" class="img-fluid rounded fade-in">
+                </div>
+                <div class="col-md-6 fade-in">
+                    <div class="contact-info fade-in">
+                        <p><strong>Phone:</strong> +1 509 992 2663</p>
+                        <p><strong>Hours:</strong> Monday – Sunday from 7am – 10pm</p>
+                        <p><strong>Location:</strong> Spokane, WA, USA</p>
+                        <p><strong>Email:</strong> <a href="mailto:valekbudimir@gmail.com">valekbudimir@gmail.com</a></p>
+                        <h3>Contact me anytime!</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-message mt-5 fade-in">
+                <h3>Message Me</h3>
+                <p>Ready to embark on a digital journey together? Let’s chat! Feel free to reach out through the contact form, and let’s turn your web dreams into a reality.</p>
+                <form action="contact-form-handler.php" method="post" class="contact-form fade-in">
+                    <div class="form-group fade-in">
+                        <label for="first-name">First Name *</label>
+                        <input type="text" class="form-control fade-in" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group fade-in">
+                        <label for="last-name">Last Name *</label>
+                        <input type="text" class="form-control fade-in" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group fade-in">
+                        <label for="email">Email *</label>
+                        <input type="email" class="form-control fade-in" id="email" name="email" required>
+                    </div>
+                    <div class="form-group fade-in">
+                        <label for="message">Comment or Message</label>
+                        <textarea class="form-control fade-in" id="message" name="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary fade-in">Submit</button>
+                </form>
+            </div>
+        </section>
+        <div class="text-right my-4 fade-in">
+            <a href="#top" class="go-to-top">Go to Top</a>
+        </div>
+        <div class="text-center my-4 fade-in">
+            <a href="https://www.developer.softlaunchpad.com/" class="go-to-top">Home</a>
+        </div>
+    </main>
+    <footer class="text-center py-3 fade-in">
+        <div class="social-icons-footer">
+            <a href="https://www.facebook.com/valentin.budimir.5/" class="fade-in"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/valentin-budimir-a868952b3/" class="fade-in"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <p>&copy; 2024 Val Budimir</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth Scroll to Top
+        document.querySelector('.go-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            function checkFadeIn() {
+                fadeElements.forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 50) {
+                        el.classList.add('visible');
+                    }
+                });
+            }
+    
+            checkFadeIn();
+    
+            document.addEventListener('scroll', checkFadeIn);
+        });
+    </script>
+    
+</body>
+</html>
