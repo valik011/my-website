@@ -1,5 +1,7 @@
 My Profile Website/Resume
 
+IT IS ALREADY HOSTED, HERE'S THE ADDRESS OF THE WEBSITE: https://developer.softlaunchpad.com/
+
 ## Purpose
 This repository contains the files for my personal profile website. The purpose of this project is to practice using Git and GitHub, and to host my website online using GitHub Pages.
 
