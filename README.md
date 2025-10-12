@@ -20,5 +20,5 @@ I switched to using SSH for authentication.
 Generated an SSH key, added it to GitHub, and updated my remote URL.
 After this, I was able to successfully push my repository to GitHub
 
-## Optional: I set up GitHub Pages to host my website online at:
+## Valentin Budimir Demonstration of deploying website to GitHub pages:
   https://valik011.github.io/my-website/
