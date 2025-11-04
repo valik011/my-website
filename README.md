@@ -22,3 +22,25 @@ After this, I was able to successfully push my repository to GitHub
 
 ## Valentin Budimir Demonstration of deploying website to GitHub pages:
   https://valik011.github.io/my-website/
+
+DEPLOYING WITH GITHUB ACTIONS:
+
+## Deploying My Website with GitHub Actions
+1. Disabled automatic GitHub Pages publishing
+   a. Opened my repository on GitHub.
+   b. Navigated to Settings → Pages.
+   c. Under Source, selected GitHub Actions to disable automatic publishing.
+2. Created the workflow directory and file:
+   .github/workflows
+3. Inside it, I created a new file named:
+   deploy.yml
+4. After editing my Main Page I Commited and Pushed the workflow.
+
+## Issues encountered and solutions:
+1. My default branch was named 'Main', not 'Master', so had to edit the .yml file: branches: [ main ]
+
+## How to trigger the Deployment
+It is triggered AUTOMATICALLY, whenever I Push changes to my Main Branch.
+   
+
+   
